@@ -1,12 +1,22 @@
 <template>
   <div class="nav">
-    <nav><i class="hamburger fas fa-bars"></i></nav>
+    <nav>
+      <span v-if="open" @click="open = !open"><i class="hamburger fas fa-bars"></i></span>
+      <span v-if="!open" @click="open = !open"><i class="hamburger fas fa-bars"></i></span>
+      <!-- <i class="hamburger fas fa-bars"></i> -->
+      <slot v-if="open"></slot>
+    </nav>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Navigation'
+  name: 'Navigation',
+  data() {
+    return {
+      open: true
+    };
+  }
 }
 </script>
 

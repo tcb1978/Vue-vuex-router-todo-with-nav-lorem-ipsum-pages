@@ -5,13 +5,20 @@
         <figure class="figure"><img class="image" alt="Vue logo" src="./assets/logo.png"></figure>
       </div>
       <div class="masthead"><h1>Vue, Vuex, Todos</h1></div>
-      <Navigation />
+      <Navigation>
+        <ul>
+          <li><a href="">nav link</a></li>
+          <li><a href="">nav link</a></li>
+          <li><a href="">nav link</a></li>
+          <li><a href="">nav link</a></li>
+        </ul>
+      </Navigation>
     </div>
   </header>
 </template>
 
 <script>
-import Navigation from './Navigation'
+import Navigation from './Navigation';
 export default {
   name: 'Header',
   components: {
