@@ -2,15 +2,15 @@
   <header class="header">
     <div class="header__inner">
       <div class="logo">
-        <figure class="figure"><img class="image" alt="Vue logo" src="./assets/logo.png"></figure>
+        <figure class="figure">
+          <router-link :to="{name: 'Home'}"><img class="image" alt="Vue logo" src="./assets/logo.png"></router-link>
+        </figure>
       </div>
       <div class="masthead"><h1>Vue, Vuex, Todos</h1></div>
       <Navigation>
         <ul>
-          <li><a href="">nav link</a></li>
-          <li><a href="">nav link</a></li>
-          <li><a href="">nav link</a></li>
-          <li><a href="">nav link</a></li>
+          <li><router-link :to="{name: 'About'}">About</router-link></li>
+          <li><router-link :to="{name: 'Todos'}">Todos</router-link></li>
         </ul>
       </Navigation>
     </div>

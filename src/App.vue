@@ -3,9 +3,7 @@
     <Header/>
     <main class="main">
       <div class="main__inner">
-        <AddTodo/>
-        <FilterTodos/>
-        <Todos/>
+        <router-view/>
       </div>
     </main>
   </div>
@@ -13,17 +11,11 @@
 
 <script>
 import Header from './components/layout/Header';
-import AddTodo from './components/AddTodo';
-import FilterTodos from './components/FilterTodos';
-import Todos from './components/Todos';
 
 export default {
   name: 'app',
   components: {
     Header,
-    AddTodo,
-    FilterTodos,
-    Todos
   }
 }
 </script>
